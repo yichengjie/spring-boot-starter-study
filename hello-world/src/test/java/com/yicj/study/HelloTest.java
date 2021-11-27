@@ -1,5 +1,6 @@
 package com.yicj.study;
 
+import com.yicj.study.config.HelloProperties;
 import com.yicj.study.format.JsonFormatProcessor;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
@@ -18,11 +19,10 @@ public class HelloTest {
 
     @Test
     public void test1(){
-        HelloFormatTemplate template = new HelloFormatTemplate(new JsonFormatProcessor()) ;
+        HelloFormatTemplate template = new HelloFormatTemplate(new JsonFormatProcessor(), new HelloProperties()) ;
         String ret = template.doFormat("hello starter ");
         log.info("=====> format str : {}" ,ret);
     }
-
 
     @Test
     public void test2(){

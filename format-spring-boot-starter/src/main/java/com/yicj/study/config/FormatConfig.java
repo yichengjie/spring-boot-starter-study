@@ -1,5 +1,6 @@
 package com.yicj.study.config;
 
+import com.alibaba.fastjson.JSON;
 import com.yicj.study.format.FormatProcessor;
 import com.yicj.study.format.JsonFormatProcessor;
 import com.yicj.study.format.StringFormatProcessor;
@@ -21,6 +22,8 @@ public class FormatConfig {
 
     @Bean
     @ConditionalOnClass(name = "com.alibaba.fastjson.JSON")
+    // 注意不要使用@ConditionalOnClass(JSON.class)，否则引入该starter的项目会报错
+    //Caused by: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
     public FormatProcessor jsonFormat(){
         return new JsonFormatProcessor() ;
     }

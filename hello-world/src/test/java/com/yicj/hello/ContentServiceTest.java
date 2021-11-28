@@ -1,6 +1,7 @@
-package com.yicj.format;
+package com.yicj.hello;
 
-import com.yicj.enable.generator.IdGenerator;
+
+import com.yicj.content.service.ContentService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,14 +12,15 @@ import org.springframework.test.context.junit4.SpringRunner;
 @Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = HelloApp.class)
-public class IdGeneratorTest {
+public class ContentServiceTest {
 
     @Autowired
-    private IdGenerator idGenerator ;
+    private ContentService contentService ;
 
     @Test
-    public void getPrefixTimeRandomId(){
-        String prefixTimeRandomId = idGenerator.getPrefixTimeRandomId();
-        log.info("========> id : {}", prefixTimeRandomId);
+    public void doSomething(){
+        String ret = contentService.doSomething();
+        log.info("ret : {}", ret);
     }
+
 }

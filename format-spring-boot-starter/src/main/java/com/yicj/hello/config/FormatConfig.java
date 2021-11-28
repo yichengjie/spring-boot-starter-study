@@ -1,8 +1,8 @@
-package com.yicj.format.config;
+package com.yicj.hello.config;
 
-import com.yicj.format.processor.FormatProcessor;
-import com.yicj.format.processor.JsonFormatProcessor;
-import com.yicj.format.processor.StringFormatProcessor;
+import com.yicj.hello.processor.FormatProcessor;
+import com.yicj.hello.processor.JsonFormatProcessor;
+import com.yicj.hello.processor.StringFormatProcessor;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingClass;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package com.yicj.format.config;
+package com.yicj.hello.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

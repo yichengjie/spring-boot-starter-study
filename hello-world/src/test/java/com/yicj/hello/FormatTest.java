@@ -1,7 +1,7 @@
-package com.yicj.format;
+package com.yicj.hello;
 
-import com.yicj.format.config.HelloProperties;
-import com.yicj.format.processor.JsonFormatProcessor;
+import com.yicj.hello.config.HelloProperties;
+import com.yicj.hello.processor.JsonFormatProcessor;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

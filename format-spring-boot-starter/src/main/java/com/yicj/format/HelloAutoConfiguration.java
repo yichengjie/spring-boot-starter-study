@@ -1,8 +1,8 @@
-package com.yicj.study;
+package com.yicj.format;
 
-import com.yicj.study.config.FormatConfig;
-import com.yicj.study.config.HelloProperties;
-import com.yicj.study.format.FormatProcessor;
+import com.yicj.format.config.FormatConfig;
+import com.yicj.format.config.HelloProperties;
+import com.yicj.format.processor.FormatProcessor;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

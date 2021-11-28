@@ -1,7 +1,7 @@
-package com.yicj.study;
+package com.yicj.format;
 
-import com.yicj.study.config.HelloProperties;
-import com.yicj.study.format.JsonFormatProcessor;
+import com.yicj.format.config.HelloProperties;
+import com.yicj.format.processor.JsonFormatProcessor;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,7 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = HelloApp.class)
-public class HelloTest {
+public class FormatTest {
 
    @Autowired
     private HelloFormatTemplate helloFormatTemplate ;

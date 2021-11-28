@@ -1,0 +1,3 @@
+1. ConfigurationProperties配合EnableConfigurationProperties使用
+2. META-INF中新建spring.factories文件并以EnableAutoConfiguration为key
+3. 使用直接获取参数

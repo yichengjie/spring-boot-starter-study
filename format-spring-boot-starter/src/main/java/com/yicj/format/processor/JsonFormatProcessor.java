@@ -1,4 +1,4 @@
-package com.yicj.study.format;
+package com.yicj.format.processor;
 
 import com.alibaba.fastjson.JSON;
 

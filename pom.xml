@@ -10,6 +10,7 @@
     <modules>
         <module>format-spring-boot-starter</module>
         <module>hello-world</module>
+        <module>enable-spring-boot-starter</module>
     </modules>
     <packaging>pom</packaging>
 

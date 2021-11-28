@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.yicj.study.HelloAutoConfiguration
+com.yicj.format.HelloAutoConfiguration

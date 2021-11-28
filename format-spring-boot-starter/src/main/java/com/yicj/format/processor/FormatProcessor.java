@@ -1,4 +1,4 @@
-package com.yicj.study.format;
+package com.yicj.format.processor;
 
 public interface FormatProcessor {
     // 定义一个格式化方法

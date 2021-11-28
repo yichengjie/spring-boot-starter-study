@@ -1,7 +1,7 @@
-package com.yicj.study;
+package com.yicj.format;
 
-import com.yicj.study.config.HelloProperties;
-import com.yicj.study.format.FormatProcessor;
+import com.yicj.format.config.HelloProperties;
+import com.yicj.format.processor.FormatProcessor;
 
 public class HelloFormatTemplate {
 

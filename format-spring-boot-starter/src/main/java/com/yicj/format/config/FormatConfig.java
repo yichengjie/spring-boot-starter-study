@@ -1,9 +1,8 @@
-package com.yicj.study.config;
+package com.yicj.format.config;
 
-import com.alibaba.fastjson.JSON;
-import com.yicj.study.format.FormatProcessor;
-import com.yicj.study.format.JsonFormatProcessor;
-import com.yicj.study.format.StringFormatProcessor;
+import com.yicj.format.processor.FormatProcessor;
+import com.yicj.format.processor.JsonFormatProcessor;
+import com.yicj.format.processor.StringFormatProcessor;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingClass;
 import org.springframework.context.annotation.Bean;

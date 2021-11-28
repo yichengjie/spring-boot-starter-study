@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
-@EnableExceptionHandler
+@EnableExceptionHandler("execution(* com.yicj.hello.controller..*Controller.*(..))")
 @EnablePigService(prefix = "test")
 @EnableContentService(policy = "core")
 @EnableIdGenerator

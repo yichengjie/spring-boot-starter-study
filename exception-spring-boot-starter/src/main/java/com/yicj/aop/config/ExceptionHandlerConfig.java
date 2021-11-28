@@ -1,22 +1,21 @@
-package com.yicj.aop;
+package com.yicj.aop.config;
 
 
 import com.yicj.aop.advice.ExceptionAdvice;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.aop.aspectj.AspectJExpressionPointcut;
 import org.springframework.aop.support.DefaultPointcutAdvisor;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.util.StringUtils;
 
 @Slf4j
-@ConditionalOnProperty("aop.exception.pointcut")
 public class ExceptionHandlerConfig {
 
-    //execution(* com.yicj.aop.controller..*Controller.*(..))
-    @Value("${aop.exception.pointcut}")
     private String pointcutExpression ;
+
+    public ExceptionHandlerConfig(String pointcutExpression){
+        this.pointcutExpression = pointcutExpression ;
+    }
 
     @Bean
     public DefaultPointcutAdvisor exceptionAdvisor(){

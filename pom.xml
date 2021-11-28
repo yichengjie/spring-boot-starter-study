@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.yicj.study</groupId>
-    <artifactId>spring-boot-study7</artifactId>
+    <artifactId>spring-boot-starter-study</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>format-spring-boot-starter</module>

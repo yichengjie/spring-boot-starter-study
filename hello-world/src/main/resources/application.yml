@@ -2,3 +2,7 @@ hello.format.info:
   country: china
   city: bjs
   name: lisi
+
+aop:
+  exception:
+    pointcut: "execution(* com.yicj.hello.controller..*Controller.*(..))"

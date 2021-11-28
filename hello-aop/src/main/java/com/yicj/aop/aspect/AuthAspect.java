@@ -2,21 +2,20 @@ package com.yicj.aop.aspect;
 
 import com.yicj.aop.anno.LogTag;
 import lombok.extern.slf4j.Slf4j;
+import org.aopalliance.intercept.MethodInterceptor;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.*;
 import org.aspectj.lang.reflect.MethodSignature;
-import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Method;
 
 @Slf4j
 @Aspect
-@Component
 public class AuthAspect {
 
-    @Pointcut("execution(* com.yicj.aop.controller..*Controller.*(..)) ")
+    @Pointcut("execution(* com.yicj.aop.controller..*Controller.*(..))")
     public void pointcut(){}
 
 

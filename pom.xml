@@ -15,6 +15,7 @@
         <module>aspect-spring-boot-starter</module>
         <module>pig-spring-boot-starter</module>
         <module>hello-aop</module>
+        <module>exception-spring-boot-starter</module>
     </modules>
     <packaging>pom</packaging>
 

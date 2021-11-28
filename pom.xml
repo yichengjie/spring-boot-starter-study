@@ -12,6 +12,8 @@
         <module>hello-world</module>
         <module>id-generator-spring-boot-starter</module>
         <module>content-spring-boot-starter</module>
+        <module>aspect-spring-boot-starter</module>
+        <module>pig-spring-boot-starter</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -13,8 +13,15 @@ public class HelloController {
         return "hello" ;
     }
 
+    @LogTag
     @GetMapping("/hello2")
     public String hello2(){
+        int a = 1/0 ;
         return "hello2" ;
+    }
+
+    @GetMapping("/hello3")
+    public String hello3(){
+        return "hello3" ;
     }
 }

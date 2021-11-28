@@ -5,6 +5,7 @@ import com.yicj.enable.EnableIdGenerator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
 @EnableContentService(policy = "core")
 @EnableIdGenerator
 @SpringBootApplication

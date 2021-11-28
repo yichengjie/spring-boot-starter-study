@@ -1,7 +1,6 @@
 package com.yicj.aop;
 
 import com.yicj.aop.config.ExceptionHandlerConfig;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.support.AbstractBeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
@@ -9,12 +8,11 @@ import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;
 import org.springframework.core.annotation.AnnotationAttributes;
 import org.springframework.core.type.AnnotationMetadata;
 import org.springframework.util.StringUtils;
-
 import java.util.Map;
-import java.util.Optional;
+
 public class ExceptionImportSelector implements ImportBeanDefinitionRegistrar {
 
-    private static final String BEAN = "exceptionAutoConfiguration" ;
+    private static final String BEAN = "exceptionImportSelector" ;
 
     @Override
     public void registerBeanDefinitions(AnnotationMetadata importingClassMetadata, BeanDefinitionRegistry registry) {
